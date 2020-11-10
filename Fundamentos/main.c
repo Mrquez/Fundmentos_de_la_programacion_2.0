@@ -1,18 +1,20 @@
-/* 
- * File:   main.c
- * Author: Claudio Márquez
- *
- * Created on 10 de noviembre de 2020, 12:54 PM
- */
-
 #include <stdio.h>
-#include <stdlib.h>
-
-/*
- * 
- */
-int main(int argc, char** argv) {
-
-    return (EXIT_SUCCESS);
+#include<stdlib.h>
+#include <math.h>
+int main(int argc, char**argv)
+{
+   int a=0, b=1 , c=0 , d =1, e=0;
+   printf(" Ingrese la cantidad de numeros de la secuencia de fivonacci que ocupa \n" );
+   scanf("%d",&a);
+   
+   printf("%d",c);
+  
+   while(b<a){
+       printf("\n%d",d);
+       e=c+d;
+       c=d;
+       d=e;
+       b++;
+   }
+        return 0;
 }
-
