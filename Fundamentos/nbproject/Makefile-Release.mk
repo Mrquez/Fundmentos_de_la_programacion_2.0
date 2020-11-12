@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Fivonacci\ con\ while.o
+	${OBJECTDIR}/Fivonacci\ con\ while.o \
+	${OBJECTDIR}/Tablas.o
 
 
 # C Compiler Flags
@@ -67,6 +68,11 @@ ${OBJECTDIR}/Fivonacci\ con\ while.o: Fivonacci\ con\ while.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fivonacci\ con\ while.o Fivonacci\ con\ while.c
+
+${OBJECTDIR}/Tablas.o: Tablas.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas.o Tablas.c
 
 # Subprojects
 .build-subprojects:
