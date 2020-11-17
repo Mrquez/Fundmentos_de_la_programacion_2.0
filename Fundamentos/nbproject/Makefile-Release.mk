@@ -35,6 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/Actividad1.o \
+	${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o \
+	${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o \
 	${OBJECTDIR}/Fivonacci\ con\ while.o \
 	${OBJECTDIR}/Tablas\ con\ For.o \
 	${OBJECTDIR}/Tablas\ con\ while.o
@@ -63,6 +66,21 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+${OBJECTDIR}/Actividad1.o: Actividad1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Actividad1.o Actividad1.c
+
+${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o: El_Mayor_De_Cuatro_Numeros.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o El_Mayor_De_Cuatro_Numeros.c
+
+${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o: El_Mayor_De_Tres_Numeros.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o El_Mayor_De_Tres_Numeros.c
 
 .NO_PARALLEL:${OBJECTDIR}/Fivonacci\ con\ while.o
 ${OBJECTDIR}/Fivonacci\ con\ while.o: Fivonacci\ con\ while.c 
