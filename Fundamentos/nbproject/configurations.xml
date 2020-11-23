@@ -13,8 +13,10 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Actividad1.c</itemPath>
+      <itemPath>Arreglo de X.c</itemPath>
       <itemPath>El_Mayor_De_Cuatro_Numeros.c</itemPath>
       <itemPath>El_Mayor_De_Tres_Numeros.c</itemPath>
+      <itemPath>Fivonacci Arreglos.c</itemPath>
       <itemPath>Fivonacci con while.c</itemPath>
       <itemPath>Tablas con For.c</itemPath>
       <itemPath>Tablas con while.c</itemPath>
@@ -43,9 +45,13 @@
       </compileType>
       <item path="Actividad1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Arreglo de X.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="El_Mayor_De_Cuatro_Numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="El_Mayor_De_Tres_Numeros.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Fivonacci Arreglos.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Fivonacci con while.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -76,9 +82,13 @@
       </compileType>
       <item path="Actividad1.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Arreglo de X.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="El_Mayor_De_Cuatro_Numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="El_Mayor_De_Tres_Numeros.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Fivonacci Arreglos.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Fivonacci con while.c" ex="false" tool="0" flavor2="0">
       </item>
