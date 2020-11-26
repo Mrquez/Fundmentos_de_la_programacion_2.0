@@ -14,10 +14,14 @@
                    projectFiles="true">
       <itemPath>Actividad1.c</itemPath>
       <itemPath>Arreglo de X.c</itemPath>
+      <itemPath>Burbuja optimizado.c</itemPath>
+      <itemPath>El mayor de n numeros.c</itemPath>
       <itemPath>El_Mayor_De_Cuatro_Numeros.c</itemPath>
       <itemPath>El_Mayor_De_Tres_Numeros.c</itemPath>
       <itemPath>Fivonacci Arreglos.c</itemPath>
       <itemPath>Fivonacci con while.c</itemPath>
+      <itemPath>Metodo Burbuja.c</itemPath>
+      <itemPath>Promedio Arreglo de n.c</itemPath>
       <itemPath>Tablas con For.c</itemPath>
       <itemPath>Tablas con while.c</itemPath>
     </logicalFolder>
@@ -47,6 +51,10 @@
       </item>
       <item path="Arreglo de X.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Burbuja optimizado.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="El mayor de n numeros.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="El_Mayor_De_Cuatro_Numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="El_Mayor_De_Tres_Numeros.c" ex="false" tool="0" flavor2="0">
@@ -54,6 +62,10 @@
       <item path="Fivonacci Arreglos.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Fivonacci con while.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Metodo Burbuja.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Promedio Arreglo de n.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas con For.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -84,6 +96,10 @@
       </item>
       <item path="Arreglo de X.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Burbuja optimizado.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="El mayor de n numeros.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="El_Mayor_De_Cuatro_Numeros.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="El_Mayor_De_Tres_Numeros.c" ex="false" tool="0" flavor2="0">
@@ -91,6 +107,10 @@
       <item path="Fivonacci Arreglos.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Fivonacci con while.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Metodo Burbuja.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Promedio Arreglo de n.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas con For.c" ex="false" tool="0" flavor2="0">
       </item>
