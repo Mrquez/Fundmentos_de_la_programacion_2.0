@@ -35,18 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Actividad1.o \
-	${OBJECTDIR}/Arreglo\ de\ X.o \
-	${OBJECTDIR}/Burbuja\ optimizado.o \
-	${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o \
-	${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o \
-	${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o \
-	${OBJECTDIR}/Fivonacci\ Arreglos.o \
-	${OBJECTDIR}/Fivonacci\ con\ while.o \
-	${OBJECTDIR}/Metodo\ Burbuja.o \
-	${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o \
-	${OBJECTDIR}/Tablas\ con\ For.o \
-	${OBJECTDIR}/Tablas\ con\ while.o
+	${OBJECTDIR}/Menu\ temperatura.o
 
 
 # C Compiler Flags
@@ -73,74 +62,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Actividad1.o: Actividad1.c 
+.NO_PARALLEL:${OBJECTDIR}/Menu\ temperatura.o
+${OBJECTDIR}/Menu\ temperatura.o: Menu\ temperatura.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Actividad1.o Actividad1.c
-
-.NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ X.o
-${OBJECTDIR}/Arreglo\ de\ X.o: Arreglo\ de\ X.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ X.o Arreglo\ de\ X.c
-
-.NO_PARALLEL:${OBJECTDIR}/Burbuja\ optimizado.o
-${OBJECTDIR}/Burbuja\ optimizado.o: Burbuja\ optimizado.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Burbuja\ optimizado.o Burbuja\ optimizado.c
-
-.NO_PARALLEL:${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o
-${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o: El\ mayor\ de\ n\ numeros.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o El\ mayor\ de\ n\ numeros.c
-
-${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o: El_Mayor_De_Cuatro_Numeros.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o El_Mayor_De_Cuatro_Numeros.c
-
-${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o: El_Mayor_De_Tres_Numeros.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o El_Mayor_De_Tres_Numeros.c
-
-.NO_PARALLEL:${OBJECTDIR}/Fivonacci\ Arreglos.o
-${OBJECTDIR}/Fivonacci\ Arreglos.o: Fivonacci\ Arreglos.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fivonacci\ Arreglos.o Fivonacci\ Arreglos.c
-
-.NO_PARALLEL:${OBJECTDIR}/Fivonacci\ con\ while.o
-${OBJECTDIR}/Fivonacci\ con\ while.o: Fivonacci\ con\ while.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fivonacci\ con\ while.o Fivonacci\ con\ while.c
-
-.NO_PARALLEL:${OBJECTDIR}/Metodo\ Burbuja.o
-${OBJECTDIR}/Metodo\ Burbuja.o: Metodo\ Burbuja.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Metodo\ Burbuja.o Metodo\ Burbuja.c
-
-.NO_PARALLEL:${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o
-${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o: Promedio\ Arreglo\ de\ n.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o Promedio\ Arreglo\ de\ n.c
-
-.NO_PARALLEL:${OBJECTDIR}/Tablas\ con\ For.o
-${OBJECTDIR}/Tablas\ con\ For.o: Tablas\ con\ For.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ con\ For.o Tablas\ con\ For.c
-
-.NO_PARALLEL:${OBJECTDIR}/Tablas\ con\ while.o
-${OBJECTDIR}/Tablas\ con\ while.o: Tablas\ con\ while.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ con\ while.o Tablas\ con\ while.c
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ temperatura.o Menu\ temperatura.c
 
 # Subprojects
 .build-subprojects:

@@ -43,6 +43,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o \
 	${OBJECTDIR}/Fivonacci\ Arreglos.o \
 	${OBJECTDIR}/Fivonacci\ con\ while.o \
+	${OBJECTDIR}/Funciones\ Math.o \
+	${OBJECTDIR}/Menu\ temperatura.o \
 	${OBJECTDIR}/Metodo\ Burbuja.o \
 	${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o \
 	${OBJECTDIR}/Tablas\ con\ For.o \
@@ -117,6 +119,18 @@ ${OBJECTDIR}/Fivonacci\ con\ while.o: Fivonacci\ con\ while.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fivonacci\ con\ while.o Fivonacci\ con\ while.c
+
+.NO_PARALLEL:${OBJECTDIR}/Funciones\ Math.o
+${OBJECTDIR}/Funciones\ Math.o: Funciones\ Math.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones\ Math.o Funciones\ Math.c
+
+.NO_PARALLEL:${OBJECTDIR}/Menu\ temperatura.o
+${OBJECTDIR}/Menu\ temperatura.o: Menu\ temperatura.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Menu\ temperatura.o Menu\ temperatura.c
 
 .NO_PARALLEL:${OBJECTDIR}/Metodo\ Burbuja.o
 ${OBJECTDIR}/Metodo\ Burbuja.o: Metodo\ Burbuja.c 
