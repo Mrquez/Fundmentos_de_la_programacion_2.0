@@ -36,17 +36,38 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/Actividad1.o \
+	${OBJECTDIR}/Apuntadores\ p1.o \
+	${OBJECTDIR}/Apuntadores\ p2.o \
 	${OBJECTDIR}/Arreglo\ de\ X.o \
+	${OBJECTDIR}/Arreglo\ de\ n.o \
+	${OBJECTDIR}/Arreglos.o \
 	${OBJECTDIR}/Burbuja\ optimizado.o \
+	${OBJECTDIR}/Datos\ Primitivos\ 1.o \
+	${OBJECTDIR}/Datos\ Primitivos\ 2.o \
+	${OBJECTDIR}/Division.o \
 	${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o \
 	${OBJECTDIR}/El_Mayor_De_Cuatro_Numeros.o \
 	${OBJECTDIR}/El_Mayor_De_Tres_Numeros.o \
 	${OBJECTDIR}/Fivonacci\ Arreglos.o \
 	${OBJECTDIR}/Fivonacci\ con\ while.o \
+	${OBJECTDIR}/For\ anidado.o \
 	${OBJECTDIR}/Funciones\ Math.o \
+	${OBJECTDIR}/Funciones\ matematicas\ 1.o \
+	${OBJECTDIR}/Funciones.o \
+	${OBJECTDIR}/Manejo\ de\ entradas.o \
+	${OBJECTDIR}/Manejo\ de\ salidas.o \
 	${OBJECTDIR}/Menu\ temperatura.o \
 	${OBJECTDIR}/Metodo\ Burbuja.o \
+	${OBJECTDIR}/Multiplicacion.o \
 	${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o \
+	${OBJECTDIR}/Promedio\ de\ Arreglo.o \
+	${OBJECTDIR}/Resta.o \
+	${OBJECTDIR}/Sentencia\ For-If.o \
+	${OBJECTDIR}/Sentencia\ For.o \
+	${OBJECTDIR}/Sentencia\ While.o \
+	${OBJECTDIR}/Sentencia\ if\ anidado.o \
+	${OBJECTDIR}/Suma.o \
+	${OBJECTDIR}/Switch.o \
 	${OBJECTDIR}/Tablas\ con\ For.o \
 	${OBJECTDIR}/Tablas\ con\ while.o
 
@@ -80,17 +101,57 @@ ${OBJECTDIR}/Actividad1.o: Actividad1.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Actividad1.o Actividad1.c
 
+.NO_PARALLEL:${OBJECTDIR}/Apuntadores\ p1.o
+${OBJECTDIR}/Apuntadores\ p1.o: Apuntadores\ p1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Apuntadores\ p1.o Apuntadores\ p1.c
+
+.NO_PARALLEL:${OBJECTDIR}/Apuntadores\ p2.o
+${OBJECTDIR}/Apuntadores\ p2.o: Apuntadores\ p2.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Apuntadores\ p2.o Apuntadores\ p2.c
+
 .NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ X.o
 ${OBJECTDIR}/Arreglo\ de\ X.o: Arreglo\ de\ X.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ X.o Arreglo\ de\ X.c
 
+.NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ n.o
+${OBJECTDIR}/Arreglo\ de\ n.o: Arreglo\ de\ n.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglo\ de\ n.o Arreglo\ de\ n.c
+
+${OBJECTDIR}/Arreglos.o: Arreglos.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arreglos.o Arreglos.c
+
 .NO_PARALLEL:${OBJECTDIR}/Burbuja\ optimizado.o
 ${OBJECTDIR}/Burbuja\ optimizado.o: Burbuja\ optimizado.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Burbuja\ optimizado.o Burbuja\ optimizado.c
+
+.NO_PARALLEL:${OBJECTDIR}/Datos\ Primitivos\ 1.o
+${OBJECTDIR}/Datos\ Primitivos\ 1.o: Datos\ Primitivos\ 1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos\ Primitivos\ 1.o Datos\ Primitivos\ 1.c
+
+.NO_PARALLEL:${OBJECTDIR}/Datos\ Primitivos\ 2.o
+${OBJECTDIR}/Datos\ Primitivos\ 2.o: Datos\ Primitivos\ 2.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Datos\ Primitivos\ 2.o Datos\ Primitivos\ 2.c
+
+${OBJECTDIR}/Division.o: Division.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Division.o Division.c
 
 .NO_PARALLEL:${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o
 ${OBJECTDIR}/El\ mayor\ de\ n\ numeros.o: El\ mayor\ de\ n\ numeros.c 
@@ -120,11 +181,40 @@ ${OBJECTDIR}/Fivonacci\ con\ while.o: Fivonacci\ con\ while.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fivonacci\ con\ while.o Fivonacci\ con\ while.c
 
+.NO_PARALLEL:${OBJECTDIR}/For\ anidado.o
+${OBJECTDIR}/For\ anidado.o: For\ anidado.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/For\ anidado.o For\ anidado.c
+
 .NO_PARALLEL:${OBJECTDIR}/Funciones\ Math.o
 ${OBJECTDIR}/Funciones\ Math.o: Funciones\ Math.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones\ Math.o Funciones\ Math.c
+
+.NO_PARALLEL:${OBJECTDIR}/Funciones\ matematicas\ 1.o
+${OBJECTDIR}/Funciones\ matematicas\ 1.o: Funciones\ matematicas\ 1.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones\ matematicas\ 1.o Funciones\ matematicas\ 1.c
+
+${OBJECTDIR}/Funciones.o: Funciones.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funciones.o Funciones.c
+
+.NO_PARALLEL:${OBJECTDIR}/Manejo\ de\ entradas.o
+${OBJECTDIR}/Manejo\ de\ entradas.o: Manejo\ de\ entradas.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Manejo\ de\ entradas.o Manejo\ de\ entradas.c
+
+.NO_PARALLEL:${OBJECTDIR}/Manejo\ de\ salidas.o
+${OBJECTDIR}/Manejo\ de\ salidas.o: Manejo\ de\ salidas.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Manejo\ de\ salidas.o Manejo\ de\ salidas.c
 
 .NO_PARALLEL:${OBJECTDIR}/Menu\ temperatura.o
 ${OBJECTDIR}/Menu\ temperatura.o: Menu\ temperatura.c 
@@ -138,11 +228,61 @@ ${OBJECTDIR}/Metodo\ Burbuja.o: Metodo\ Burbuja.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Metodo\ Burbuja.o Metodo\ Burbuja.c
 
+${OBJECTDIR}/Multiplicacion.o: Multiplicacion.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Multiplicacion.o Multiplicacion.c
+
 .NO_PARALLEL:${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o
 ${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o: Promedio\ Arreglo\ de\ n.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o Promedio\ Arreglo\ de\ n.c
+
+.NO_PARALLEL:${OBJECTDIR}/Promedio\ de\ Arreglo.o
+${OBJECTDIR}/Promedio\ de\ Arreglo.o: Promedio\ de\ Arreglo.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Promedio\ de\ Arreglo.o Promedio\ de\ Arreglo.c
+
+${OBJECTDIR}/Resta.o: Resta.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Resta.o Resta.c
+
+.NO_PARALLEL:${OBJECTDIR}/Sentencia\ For-If.o
+${OBJECTDIR}/Sentencia\ For-If.o: Sentencia\ For-If.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sentencia\ For-If.o Sentencia\ For-If.c
+
+.NO_PARALLEL:${OBJECTDIR}/Sentencia\ For.o
+${OBJECTDIR}/Sentencia\ For.o: Sentencia\ For.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sentencia\ For.o Sentencia\ For.c
+
+.NO_PARALLEL:${OBJECTDIR}/Sentencia\ While.o
+${OBJECTDIR}/Sentencia\ While.o: Sentencia\ While.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sentencia\ While.o Sentencia\ While.c
+
+.NO_PARALLEL:${OBJECTDIR}/Sentencia\ if\ anidado.o
+${OBJECTDIR}/Sentencia\ if\ anidado.o: Sentencia\ if\ anidado.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sentencia\ if\ anidado.o Sentencia\ if\ anidado.c
+
+${OBJECTDIR}/Suma.o: Suma.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Suma.o Suma.c
+
+${OBJECTDIR}/Switch.o: Switch.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Switch.o Switch.c
 
 .NO_PARALLEL:${OBJECTDIR}/Tablas\ con\ For.o
 ${OBJECTDIR}/Tablas\ con\ For.o: Tablas\ con\ For.c 
