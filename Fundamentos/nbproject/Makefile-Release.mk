@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Actividad1.o \
 	${OBJECTDIR}/Apuntadores\ p1.o \
 	${OBJECTDIR}/Apuntadores\ p2.o \
+	${OBJECTDIR}/Arr\ de\ caracteres.o \
 	${OBJECTDIR}/Arreglo\ de\ X.o \
 	${OBJECTDIR}/Arreglo\ de\ n.o \
 	${OBJECTDIR}/Arreglos.o \
@@ -112,6 +113,12 @@ ${OBJECTDIR}/Apuntadores\ p2.o: Apuntadores\ p2.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Apuntadores\ p2.o Apuntadores\ p2.c
+
+.NO_PARALLEL:${OBJECTDIR}/Arr\ de\ caracteres.o
+${OBJECTDIR}/Arr\ de\ caracteres.o: Arr\ de\ caracteres.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arr\ de\ caracteres.o Arr\ de\ caracteres.c
 
 .NO_PARALLEL:${OBJECTDIR}/Arreglo\ de\ X.o
 ${OBJECTDIR}/Arreglo\ de\ X.o: Arreglo\ de\ X.c 

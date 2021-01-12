@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/Apuntadores\ p1.o \
 	${OBJECTDIR}/Apuntadores\ p2.o \
+	${OBJECTDIR}/Arr\ de\ caracteres.o \
 	${OBJECTDIR}/Arreglos.o \
 	${OBJECTDIR}/Datos\ Primitivos\ 1.o \
 	${OBJECTDIR}/Datos\ Primitivos\ 2.o \
@@ -92,6 +93,12 @@ ${OBJECTDIR}/Apuntadores\ p2.o: Apuntadores\ p2.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Apuntadores\ p2.o Apuntadores\ p2.c
+
+.NO_PARALLEL:${OBJECTDIR}/Arr\ de\ caracteres.o
+${OBJECTDIR}/Arr\ de\ caracteres.o: Arr\ de\ caracteres.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Arr\ de\ caracteres.o Arr\ de\ caracteres.c
 
 ${OBJECTDIR}/Arreglos.o: Arreglos.c 
 	${MKDIR} -p ${OBJECTDIR}

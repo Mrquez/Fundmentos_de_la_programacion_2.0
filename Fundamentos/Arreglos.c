@@ -5,8 +5,8 @@
 int main(int argc, char** argv) {
     float meses[12];
     printf ("Ingrese su peso en kilos de enero \n");
-    scanf("%f\n",&meses[0]);
-     printf ("Ingrese su peso en kilos de febrero \n");
+    scanf("%f",&meses[0]);
+     printf ("\n Ingrese su peso en kilos de febrero \n");
     scanf("%f\n",&meses[1]);
      printf ("Ingrese su peso en kilos de Marzo \n");
     scanf("%f\n",&meses[2]);
