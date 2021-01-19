@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>funciones.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -73,48 +74,6 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Apuntadores p1.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Apuntadores p2.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Arr de caracteres.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Arreglos.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Datos Primitivos 1.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Datos Primitivos 2.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Division.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="For anidado.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Funciones matematicas 1.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Funciones.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Manejo de entradas.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Manejo de salidas.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Multiplicacion.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Promedio de Arreglo.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Resta.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Sentencia For-If.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Sentencia For.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Sentencia While.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Sentencia if anidado.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Suma.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Switch.c" ex="false" tool="0" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -207,6 +166,8 @@
       <item path="Tablas con For.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Tablas con while.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="funciones.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
