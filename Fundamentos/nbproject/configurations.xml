@@ -40,6 +40,7 @@
       <itemPath>Arreglo de X.c</itemPath>
       <itemPath>Arreglo de n.c</itemPath>
       <itemPath>Burbuja optimizado.c</itemPath>
+      <itemPath>Cadena.c</itemPath>
       <itemPath>El mayor de n numeros.c</itemPath>
       <itemPath>El_Mayor_De_Cuatro_Numeros.c</itemPath>
       <itemPath>El_Mayor_De_Tres_Numeros.c</itemPath>
@@ -51,6 +52,7 @@
       <itemPath>Promedio Arreglo de n.c</itemPath>
       <itemPath>Tablas con For.c</itemPath>
       <itemPath>Tablas con while.c</itemPath>
+      <itemPath>prueba_fun.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -111,6 +113,8 @@
       </item>
       <item path="Burbuja optimizado.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="Cadena.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="Datos Primitivos 1.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Datos Primitivos 2.c" ex="false" tool="0" flavor2="0">
@@ -168,6 +172,8 @@
       <item path="Tablas con while.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="funciones.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prueba_fun.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

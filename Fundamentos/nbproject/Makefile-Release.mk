@@ -43,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/Arreglo\ de\ n.o \
 	${OBJECTDIR}/Arreglos.o \
 	${OBJECTDIR}/Burbuja\ optimizado.o \
+	${OBJECTDIR}/Cadena.o \
 	${OBJECTDIR}/Datos\ Primitivos\ 1.o \
 	${OBJECTDIR}/Datos\ Primitivos\ 2.o \
 	${OBJECTDIR}/Division.o \
@@ -70,7 +71,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Suma.o \
 	${OBJECTDIR}/Switch.o \
 	${OBJECTDIR}/Tablas\ con\ For.o \
-	${OBJECTDIR}/Tablas\ con\ while.o
+	${OBJECTDIR}/Tablas\ con\ while.o \
+	${OBJECTDIR}/prueba_fun.o
 
 
 # C Compiler Flags
@@ -142,6 +144,11 @@ ${OBJECTDIR}/Burbuja\ optimizado.o: Burbuja\ optimizado.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Burbuja\ optimizado.o Burbuja\ optimizado.c
+
+${OBJECTDIR}/Cadena.o: Cadena.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Cadena.o Cadena.c
 
 .NO_PARALLEL:${OBJECTDIR}/Datos\ Primitivos\ 1.o
 ${OBJECTDIR}/Datos\ Primitivos\ 1.o: Datos\ Primitivos\ 1.c 
@@ -302,6 +309,11 @@ ${OBJECTDIR}/Tablas\ con\ while.o: Tablas\ con\ while.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas\ con\ while.o Tablas\ con\ while.c
+
+${OBJECTDIR}/prueba_fun.o: prueba_fun.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/prueba_fun.o prueba_fun.c
 
 # Subprojects
 .build-subprojects:
