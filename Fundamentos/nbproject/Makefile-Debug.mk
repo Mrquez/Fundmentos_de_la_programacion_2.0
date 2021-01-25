@@ -34,7 +34,10 @@ include Makefile
 OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
-OBJECTFILES=
+OBJECTFILES= \
+	${OBJECTDIR}/Recursividad\ Factorial.o \
+	${OBJECTDIR}/Recursividad\ Fivonacci.o \
+	${OBJECTDIR}/Recursividad_Anohi.o
 
 
 # C Compiler Flags
@@ -60,6 +63,23 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/fundamentos ${OBJECTFILES} ${LDLIBSOPTIONS}
+
+.NO_PARALLEL:${OBJECTDIR}/Recursividad\ Factorial.o
+${OBJECTDIR}/Recursividad\ Factorial.o: Recursividad\ Factorial.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad\ Factorial.o Recursividad\ Factorial.c
+
+.NO_PARALLEL:${OBJECTDIR}/Recursividad\ Fivonacci.o
+${OBJECTDIR}/Recursividad\ Fivonacci.o: Recursividad\ Fivonacci.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad\ Fivonacci.o Recursividad\ Fivonacci.c
+
+${OBJECTDIR}/Recursividad_Anohi.o: Recursividad_Anohi.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad_Anohi.o Recursividad_Anohi.c
 
 # Subprojects
 .build-subprojects:

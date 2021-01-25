@@ -63,6 +63,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/Multiplicacion.o \
 	${OBJECTDIR}/Promedio\ Arreglo\ de\ n.o \
 	${OBJECTDIR}/Promedio\ de\ Arreglo.o \
+	${OBJECTDIR}/Recursividad\ Factorial.o \
+	${OBJECTDIR}/Recursividad\ Fivonacci.o \
+	${OBJECTDIR}/Recursividad_Anohi.o \
 	${OBJECTDIR}/Resta.o \
 	${OBJECTDIR}/Sentencia\ For-If.o \
 	${OBJECTDIR}/Sentencia\ For.o \
@@ -258,6 +261,23 @@ ${OBJECTDIR}/Promedio\ de\ Arreglo.o: Promedio\ de\ Arreglo.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Promedio\ de\ Arreglo.o Promedio\ de\ Arreglo.c
+
+.NO_PARALLEL:${OBJECTDIR}/Recursividad\ Factorial.o
+${OBJECTDIR}/Recursividad\ Factorial.o: Recursividad\ Factorial.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad\ Factorial.o Recursividad\ Factorial.c
+
+.NO_PARALLEL:${OBJECTDIR}/Recursividad\ Fivonacci.o
+${OBJECTDIR}/Recursividad\ Fivonacci.o: Recursividad\ Fivonacci.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad\ Fivonacci.o Recursividad\ Fivonacci.c
+
+${OBJECTDIR}/Recursividad_Anohi.o: Recursividad_Anohi.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Recursividad_Anohi.o Recursividad_Anohi.c
 
 ${OBJECTDIR}/Resta.o: Resta.c 
 	${MKDIR} -p ${OBJECTDIR}

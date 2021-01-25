@@ -50,6 +50,9 @@
       <itemPath>Menu temperatura.c</itemPath>
       <itemPath>Metodo Burbuja.c</itemPath>
       <itemPath>Promedio Arreglo de n.c</itemPath>
+      <itemPath>Recursividad Factorial.c</itemPath>
+      <itemPath>Recursividad Fivonacci.c</itemPath>
+      <itemPath>Recursividad_Anohi.c</itemPath>
       <itemPath>Tablas con For.c</itemPath>
       <itemPath>Tablas con while.c</itemPath>
       <itemPath>prueba_fun.c</itemPath>
@@ -76,6 +79,12 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="Recursividad Factorial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Recursividad Fivonacci.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Recursividad_Anohi.c" ex="false" tool="0" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -152,6 +161,12 @@
       <item path="Promedio Arreglo de n.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Promedio de Arreglo.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Recursividad Factorial.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Recursividad Fivonacci.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Recursividad_Anohi.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Resta.c" ex="false" tool="0" flavor2="0">
       </item>
